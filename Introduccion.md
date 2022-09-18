@@ -1,7 +1,7 @@
-## Introduccion
+## **Introduccion** ##
 <br />
 
-### Lenguaje Interpretado ###
+### **Tipos de Lenguaje** ###
 <br />
 
 Su clasificación se hace en base a cómo se ejecutan los programas
@@ -26,10 +26,48 @@ Su clasificación se hace en base a cómo se ejecutan los programas
 
 <br />
 
-### Que es Javascript? ###
+### **Que es Javascript?** ###
+<br />
 
-### Qué es ECMAScript y que aporta? ###
+Es un lenguaje de programación interpretado.
 
-### Versiones actuales de ECMAScript más empleadas a dia de hoy y su compatibilidad ###
+Inicialmente se creó para funcionar en cliente / navegador
 
-### Plugins recomendados para el desarrollo de JS en VSCode ###
+Se utiliza típicamente para:
+
+* Hacer web interactivas
+* Para crear web apps
+* Para crar servidores web, app moviles, app 
+
+<br />
+
+### **Qué es ECMAScript y que aporta?** ###
+<br />
+
+ECMAScript es la especificación del lenguaje propuesta por ECMA International que se encarga de los estándares y JavaScript es el lenguaje que utiliza esta especificación para trabajar sobre estas características
+
+Lo que permite que todos los navegadores puedan utilizar dicho lenguaje estandarizado
+
+<br />
+
+### **Versiones actuales de ECMAScript más empleadas a dia de hoy y su compatibilidad** ###
+<br />
+
+ECMAScript 6 es la versión más utilizada
+
+Los navegadores FireFox, Chrome y Opera están trabajando con ES6 al 98% mientras que Safari al 99%
+
+[Tabla de compatibilidad](https://kangax.github.io/compat-table/es6/)
+
+<br />
+
+### **Plugins recomendados para el desarrollo de JS en VSCode** ###
+
+Se utiliza VSCode para lo cual se cuenta con algunas extensiones como:
+
+* Prettier
+* Bracket Pair Colorizer
+* Import Cost
+* JavaScript ES6 Code Snippets
+* Quokka.js
+* Live Server
