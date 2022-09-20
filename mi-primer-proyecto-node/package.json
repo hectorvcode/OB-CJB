@@ -4,12 +4,14 @@
   "description": "Este es mi primer proyecto de Javascript con Node en OpenBootcamp",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "saludar": "node hola_mundo.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "holamundo",
     "firstproject"
   ],
-  "author": "HectorVasquez",
+  "author": "Hector Vasquez",
   "license": "ISC"
 }
