@@ -22,4 +22,6 @@ Puedes validar la version con el comando
 npm -v
 ```
 
+## **Enlace a repositorio** ##
 
+Recurso [aqui](https://github.com/Open-Bootcamp/JavaScript-Basico)
