@@ -33,8 +33,29 @@ const array2 = [1, 3, "hola", false]
 
 
 // Eliminar valores al final - pop() -> mutan el valor de nuestro array
-array.pop();
-console.log(array.pop());
+array2.pop();
+console.log(array2);
 
 
 // Eliminar valores al principio - shift() -> mutan el valor de nuestro array
+array2.shift();
+console.log(array2);
+
+
+//Metodo para eliminar, modificar, o añadir valores en nuestro array
+const array3 = [1,2,3,4,5,6]
+
+
+// Eliminar valores .splice(indice, numeroValoresEliminar)
+array3.splice(2, 0);
+console.log(array3);
+
+
+// Añadir valores .splice(indice, 0, valores)
+array3.splice(5,0,"hora",99,999)
+console.log(array3);
+
+
+// Modificar valores .splice(indice, 1, valores)
+array3.splice(4,1,"cinco")
+console.log(array3);
