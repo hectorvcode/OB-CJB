@@ -1,3 +1,5 @@
+// Funciones generadoras
+
 function* generaId() {
     let id = 0;
     while(true) {
