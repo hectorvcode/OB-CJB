@@ -1,3 +1,18 @@
 {"level":"info","message":"Mensaje informativo","service":"user-service"}
 {"level":"warn","message":"Advertencia","service":"user-service"}
 {"level":"error","message":"Este es un error","service":"user-service"}
+{"level":"info","message":"Mensaje informativo","service":"user-service"}
+{"level":"warn","message":"Advertencia","service":"user-service"}
+{"level":"error","message":"Este es un error","service":"user-service"}
+{"level":"info","message":"Mensaje informativo","service":"user-service"}
+{"level":"debug","message":"Mensaje de debug","service":"user-service"}
+{"level":"warn","message":"Advertencia","service":"user-service"}
+{"level":"error","message":"Este es un error","service":"user-service"}
+{"level":"info","message":"Mensaje informativo"}
+{"level":"debug","message":"Mensaje de debug"}
+{"level":"warn","message":"Advertencia"}
+{"level":"error","message":"Este es un error"}
+{"level":"info","message":"Mensaje informativo"}
+{"level":"debug","message":"Mensaje de debug"}
+{"level":"warn","message":"Advertencia"}
+{"level":"error","message":"Este es un error"}
