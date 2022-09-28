@@ -1,20 +1,28 @@
-const logger = require('./logger')
+/**
+ * Crea un nuevo proyecto de Node
+- Instala la dependencia Winston
+- En el archivo index.js crea una función que devuelva un error con un mensaje personalizado
+- Registra el error en un archivo a través de un try...catch
+ */
 
-//logger.log("Hola estoy saliendo por pantalla");
-logger.info("Mensaje informativo");
-logger.debug("Mensaje de debug");
-logger.warn("Advertencia");
-logger.error("Este es un error");
+
+const winston = require("winston");
+
+const logger = winston.createLogger({
+    level: 'error',
+    format: winston.format.json(),
+    transports: [
+    new winston.transports.Console(),
+    new winston.transports.File({ filename: 'error.log', level: 'error' }),
+    ],
+});
+
+function showError() {
+    throw new Error("showError function");
+}
 
 try {
-    // Código que puede fallar
-    console.log("Está ejecutándose de forma correcta");
-    const doble = miFuncion(numero);
-    console.log(doble);
-    } catch(e) {
-        // En caso de fallar, quiero que ejecutes
-        console.log(`El valor de e es: ${e}`);
-        console.log("Error!!!");
-    } finally {
-        console.log("Esto se va a ejecutar si existe o no un error");
-    }
+    showError();
+} catch (e) {
+    logger.log("error");
+}
