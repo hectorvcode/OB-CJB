@@ -1,17 +1,14 @@
 class Estudiante {
-    nombre;
+    nombre =  "Hector";
     asignaturas = ["JavaScript", "HTML", "CSS"];
-    constructor(nombre){
-        this.nombre = nombre;
-    }
-
+    
     obtenDatos(){
-        return this.nombre
+        return {
+            nombre: this.nombre,
+            asignaturas: this.asignaturas
+        }
     }
 }
 
-const nuevoEstudiante = new Estudiante("Hector");
-console.log(nuevoEstudiante);
-
-const datosEstudiante = nuevoEstudiante.obtenDatos();
-console.log(datosEstudiante);
+const nuevoEstudiante = new Estudiante();
+console.log(nuevoEstudiante.obtenDatos());
