@@ -5,9 +5,11 @@ let arr1 = [];
 
 for(let i = 0; i < str1.length; i++) {
     if(i % 2 === 0){
-        let respuesta = str1[i] + "Z";
-        console.log(respuesta);
-        arr1.push(respuesta);
+        arr1.push(str1[i] + "Z");
     }
-    console.log(arr1);
 }
+arr1.toString();
+let resultado = arr1.join('');
+
+
+console.log(resultado);
