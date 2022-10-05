@@ -5,8 +5,11 @@
  * forward, e.g., madam or nurses run.
  */
 
+
 let str3 = "racecar";
 let str4 = "Java";
+
+let stringToEval = str4;
 let arrDer = [];
 let arrRev = [];
 
@@ -14,16 +17,15 @@ function stringToArr(str1){
     arrDer = [...str1]
     return arrDer;
 }
-stringToArr(str3);
-console.log(arrDer);
+stringToArr(stringToEval);
 
 function arrayReverse(arr1){
-    
+    for(let i = arr1.length - 1; i >= 0; i--){
+        arrRev.push(arr1[i]);
+    }
+    return arrRev;
 }
-
-for(let i = str3.length - 1; i >= 0; i--){
-    arrRev.push(str3[i]);
-}
+arrayReverse(stringToArr(stringToEval));
 
 function compare(arr1, arr2){
     if(arr1.length != arr2.length){
