@@ -1,17 +1,43 @@
-// Initialize and add the map
+let marker, map;
+
 function initMap() {
-    // The location of Uluru
-    const uluru = { lat: -25.344, lng: 131.031 };
-    // The map, centered at Uluru
-    const map = new google.maps.Map(document.getElementById("map"), {
+
+    const posicion = { lat: -25.344, lng: 131.031 };
+
+    map = new google.maps.Map(document.getElementById("map"), {
         zoom: 4,
-        center: uluru,
+        center: posicion,
     });
-    // The marker, positioned at Uluru
-    const marker = new google.maps.Marker({
-        position: uluru,
-        map: map,
+
+    marker = new google.maps.Marker({
+        position: posicion,
+        map,
+        title: "Posición Inicial"
     });
+    //Obtener la geolocalización
+    geoPosiciona()
 }
 
-window.initMap = initMap;
+function geoPosiciona(){
+    if(navigator.geolocation){
+        const geoLoc = navigator.geolocation;
+        const options =  { timeout: 60000 };
+        const watchPos = geoLoc.watchPosition(centerMap, onError, options);
+    } else {
+        alert("Tu navegador no admite geolocalización");
+    }
+}
+
+function centerMap(position){
+    const nuevaPos = {
+        lat: position.coords.latitude,
+        lng: position.coords.longitude
+    }
+    marker.setPosition(nuevaPos);
+    map.setCenter(nuevaPos);
+}
+
+function onError(error){
+    console.log("Se ha producido un error y lo hemos gestionado");
+    console.error(error);
+}
