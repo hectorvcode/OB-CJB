@@ -65,3 +65,19 @@ while(n <= 45){
     }
     n++
 }
+
+//#6 — Print all the elements of the following array
+console.log("Print all the elements of the following array");
+const thisIsAnArray = ["element1", "element2", "element3", "element4"];
+
+let m = 0;
+
+while(m <= thisIsAnArray.length - 1){
+    console.log(thisIsAnArray[m]);
+    m++;
+}
+
+
+//#7 — Calculate the sum of all the numbers in the following array
+
+const numbersArray = [1,13,22,123,49]
