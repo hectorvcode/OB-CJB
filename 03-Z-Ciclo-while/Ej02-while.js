@@ -30,3 +30,17 @@ while(k <= 31){
 }
 
 
+//#4 — Print the EVEN numbers from 10 to -20
+console.log("Print the EVEN numbers from 10 to -20");
+
+let l = 10;
+while(l >= -20){
+    if(l % 2 === 0){
+        console.log(l);
+    }
+    l--;
+}
+
+
+
+
