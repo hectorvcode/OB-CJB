@@ -79,5 +79,14 @@ while(m <= thisIsAnArray.length - 1){
 
 
 //#7 — Calculate the sum of all the numbers in the following array
+console.log("Calculate the sum of all the numbers in the following array");
+const numbersArray = [1,13,22,123,49];
 
-const numbersArray = [1,13,22,123,49]
+let p = 0;
+let suma = 0;
+
+while(p < numbersArray.length){
+    suma = suma + numbersArray[p];
+    p++;
+}
+console.log(`The sum is: ${suma}`);
