@@ -44,5 +44,21 @@ while(a <= n){
 
 
 /**
- * 
+Exercise 4)
+Given two arrays of integers. Add up each element in the same position and
+create a new array containing the sum of each pair. Assume both arrays are of the same length.
  */
+
+console.log("Ordered sum of two arrays");
+let arr_3 = [4, 6, 7];
+let arr_4 = [8, 1, 9];
+
+let x = 0;
+let newArr = [];
+
+while(x < arr_3.length){
+    newArr.push(arr_3[x] + arr_4[x])
+    x++;
+}
+
+console.log(newArr);
