@@ -62,3 +62,27 @@ while(x < arr_3.length){
 }
 
 console.log(newArr);
+
+
+/**
+Exercise 5)
+Given a string change the every second letter to an uppercase ‘Z’. Assume
+there are no space.
+ */
+
+console.log("Change the second letter");
+let str1 = "javascript";
+
+let m = 0;
+while(m < str1.length){
+    if(m % 2 !== 0){
+        console.log("Z");
+    } else {
+        console.log(str1[m]);
+    }
+    m++;
+}
+
+// Example output: 
+// jZvZsZrZpZ OR each letter on a new line
+// HINT: You can use  if((i+1) % 2 == 0) to check for even indexes 
