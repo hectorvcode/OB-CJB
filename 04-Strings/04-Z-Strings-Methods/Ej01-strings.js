@@ -57,3 +57,16 @@ function truncate_string(string3, numChars){
     return string3.substring(0, numChars);
 }
 console.log(truncate_string("Robin Singh", 4));
+
+/**
+5. Write a JavaScript function to convert a string in abbreviated form.
+Test Data :
+console.log(abbrev_name("Robin Singh"));
+"Robin S."
+ */
+console.log("Convert to Abbreviated");
+function abbrev_name(string4){
+    let result1 = string4.split(" ");
+    return result1[0] + " " + result1[1].charAt(0) + ".";
+}
+console.log(abbrev_name("Robin Singh"));
