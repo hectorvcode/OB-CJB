@@ -70,3 +70,20 @@ function abbrev_name(string4){
     return result1[0] + " " + result1[1].charAt(0) + ".";
 }
 console.log(abbrev_name("Robin Singh"));
+
+/**
+6. Write a JavaScript function to hide email addresses to protect from unauthorized user.
+Test Data :
+console.log(protect_email("robin_singh@example.com"));
+"robin...@example.com"
+ */
+console.log("Hide email address");
+function protect_email(string5){
+    let splittedString = string5.split("@");
+    let firstPart = splittedString[0];
+    let halfFirstPart = firstPart.split("_");
+    let first = halfFirstPart[0];
+    let second = splittedString[1];
+    return first + "...@" + second;
+}
+console.log(protect_email("robin_singh@example.com"));
