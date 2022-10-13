@@ -87,3 +87,15 @@ function protect_email(string5){
     return first + "...@" + second;
 }
 console.log(protect_email("robin_singh@example.com"));
+
+/**
+7. Write a JavaScript function to parameterize a string
+console.log(string_parameterize("Robin Singh from USA."));
+"robin-singh-from-usa"
+Click me to see the solution
+ */
+console.log("Parametrize a String");
+function string_parameterize(string7){
+    return string7.replaceAll(" ", "-").toLowerCase();
+}
+console.log(string_parameterize("Robin Singh from USA."));
