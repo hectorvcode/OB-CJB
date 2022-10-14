@@ -99,3 +99,26 @@ function string_parameterize(string7){
     return string7.replaceAll(" ", "-").toLowerCase();
 }
 console.log(string_parameterize("Robin Singh from USA."));
+
+/**
+8. Write a JavaScript function to capitalize the first letter of a string
+Test Data :
+console.log(capitalize('js string exercises'));
+"Js string exercises"
+ */
+console.log("Capitalize first letter");
+function capitalize(string8){
+    return string8.charAt(0).toUpperCase() + string8.slice(1);
+}
+console.log(capitalize('js string exercises'));
+
+/**
+9. Write a JavaScript function to capitalize the first letter of each word in a string. Go to the editor
+Test Data :
+console.log(capitalize_Words('js string exercises'));
+"Js String Exercises"
+ */
+console.log("Capitalize first letter of each word");
+function capitalize_Words(string9){
+    
+}
