@@ -113,12 +113,42 @@ function capitalize(string8){
 console.log(capitalize('js string exercises'));
 
 /**
-9. Write a JavaScript function to capitalize the first letter of each word in a string. Go to the editor
+9. Write a JavaScript function to capitalize the first letter of each word in a string.
 Test Data :
 console.log(capitalize_Words('js string exercises'));
 "Js String Exercises"
  */
 console.log("Capitalize first letter of each word");
 function capitalize_Words(string9){
-    
+    let arr = string9.split(" ");
+    for(let i = 0; i < arr.length; i++){
+        arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
+    }
+    let str2 = arr.join(" ");
+    return str2;
 }
+console.log(capitalize_Words('js string exercises'));
+
+/**
+10. Write a JavaScript function that takes a string which has lower and upper case letters as a parameter 
+and converts upper case letters to lower case, and lower case letters to upper case.
+Test Data :
+console.log(swapcase('AaBbc'));
+"aAbBC"
+ */
+console.log("Lower case to upper case and vs");
+let res = '';
+function swapcase(string10){
+    for(let i = 0; i < string10.length; i++){
+        let c = string10[i];
+        if(c == c.toUpperCase()){
+            res = res + c.toLowerCase();
+        } else if(c == c.toLowerCase()){
+            res = res + c.toUpperCase();
+        } else {
+            res = res +c
+        }
+    }
+    return res;
+}
+console.log(swapcase('AbCde'));
