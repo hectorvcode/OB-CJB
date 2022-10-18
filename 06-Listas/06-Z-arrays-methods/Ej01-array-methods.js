@@ -136,3 +136,37 @@ let avengers2 = [
 let getName = avenger => avenger.name;
 let realNames2 = avengers.map(getName);
 console.log(realNames);
+
+
+/**
+Access the arr parameter to look in and check if the current item is the last item in the list
+ */
+console.log("Current and next item");
+const oldArray = [33, 20, 10, 5];
+const newArray = oldArray.map((currentVal, index, arr) => {
+    let nextItem = index + 1 < arr.length ? arr[index + 1] : 0
+    return currentVal - nextItem;
+});
+
+console.log(newArray);
+
+
+/**
+FreeCodeCamp .map() Tutorial
+ */
+let arr = [3, 4, 5, 6];
+// Multiply each array's element by 3
+console.log("Traditional method");
+let resp = [];
+for(let i = 0; i < arr.length; i++ ){
+    let answ = arr[i] = arr[i] * 3;
+    resp.push(answ);
+}
+console.log(resp);
+
+console.log("By using map method");
+let arr1 = [3, 4, 5, 6];
+let modifiedArr = arr1.map(function(element){
+    return element * 3;
+});
+console.log(modifiedArr);
