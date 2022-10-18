@@ -170,3 +170,24 @@ let modifiedArr = arr1.map(function(element){
     return element * 3;
 });
 console.log(modifiedArr);
+
+
+/**
+Use the map method to iterate over the array and join the values of firstName and lastName as follows:
+ */
+
+let users = [
+    {firstName : "Susan", lastName: "Steward"},
+    {firstName : "Daniel", lastName: "Longbottom"},
+    {firstName : "Jacob", lastName: "Black"}
+];
+
+let userFullNames = users.map(function(element){
+    return `${element.firstName} ${element.lastName}`;
+});
+
+console.log(userFullNames);
+
+/**
+Testing 
+ */
