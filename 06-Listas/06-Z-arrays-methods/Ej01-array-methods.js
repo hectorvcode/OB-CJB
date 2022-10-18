@@ -188,6 +188,16 @@ let userFullNames = users.map(function(element){
 
 console.log(userFullNames);
 
+
 /**
-Testing 
+Testing all the arguments of map method
  */
+console.log("All arguments with map method");
+let arr11 = [2, 3, 5, 7];
+
+arr11.map(function(element11, index11, array11){
+    console.log("element: " + element11);
+    console.log("index: " + index11);
+    console.log("array: " + array11);
+    return element11;
+}, 80);
