@@ -36,3 +36,26 @@ function sumOfElements(num, ind){
 let arrNum2 = arrNum1.reduce(sumOfElements);
 console.log(arrNum2);
 
+/**
+With map(), we can take all names in the array and append the "man" suffix to each and every one of them:
+ */
+
+let firstNames = ["super", "spider", "ant", "iron"]
+let lastName = "man";
+
+let fullNames = firstNames.map(firstName => firstName + lastName);
+console.log(fullNames);
+
+/**
+We can do this by checking for the index of our hero and making sure we use the "woman" suffix 
+for the first item on our array:
+ */
+
+let firstNames1 = ["wonder", "spider", "ant", "iron"];
+let male = "man";
+let female = "woman";
+
+let fullNames1 = firstNames1.map(function(firstName, index){
+    return (index === 0) ? firstName + female : firstName + male;
+});
+console.log(fullNames1);

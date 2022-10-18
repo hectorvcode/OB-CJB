@@ -21,16 +21,18 @@ const ar2 = [1, 2, 3, 4];
 console.log(ar1 === ar2);
 
 const compararArrays = (array1, array2) => {
-  if (array1.length !== array2.length) return false;
-  /* const res = array1.every((valor, i) => {
+    if (array1.length !== array2.length) return false;
+    /* const res = array1.every((valor, i) => {
         if(valor === array2[1]) return true
         return false
     }) */
-  const res = array1.every((valor, i) => valor === array2[i]);
-  return res;
+    const res = array1.every((valor, i) => valor === array2[i]);
+    return res;
 };
 
 console.log(compararArrays(ar1, ar2));
 
 const ar3 = [1,2,3,6];
 console.log(compararArrays(ar1, ar3));
+
+
