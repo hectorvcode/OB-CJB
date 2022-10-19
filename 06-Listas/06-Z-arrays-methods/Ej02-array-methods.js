@@ -32,4 +32,20 @@ const sumAllNums = positiveNum.reduce((previousVal, currentVal) => previousVal +
 console.log(sumAllNums);
 
 
+/**
+Calculate median and mean
+Calculate the mean and median values of the number elements from the input array.
 
+Helpful links
+Array.prototype.reduce()
+Array.prototype.sort()
+Math.abs()
+
+ans: { mean: 38.5, median: 32 }
+ */
+console.log("Median and mean");
+const input3 = [12, 46, 32, 64];
+let sortedInput = input3.sort((a, b) => a - b);
+let median = (sortedInput[input3.length / 2] + sortedInput[(input3.length / 2) - 1]) / 2;
+let mean = input3.reduce((prev3, curr3) => prev3 + curr3, 0) / input3.length;
+console.log(`{mean: ${mean}, median: ${median}}`);
