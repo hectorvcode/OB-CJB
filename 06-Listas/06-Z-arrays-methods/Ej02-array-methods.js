@@ -49,3 +49,24 @@ let sortedInput = input3.sort((a, b) => a - b);
 let median = (sortedInput[input3.length / 2] + sortedInput[(input3.length / 2) - 1]) / 2;
 let mean = input3.reduce((prev3, curr3) => prev3 + curr3, 0) / input3.length;
 console.log(`{mean: ${mean}, median: ${median}}`);
+
+
+
+/**
+Get name initials
+The given input is a string of multiple words with a single space between each of them. Abbreviate the name and return the name initials.
+
+Helpful links
+Array.prototype.map()
+String.prototype.split()
+String.prototype.join()
+
+ans: 'GRRM'
+ */
+
+const input4 = 'George Raymond Richard Martin';
+
+const splittedInput = input4.split(" ");
+let arr1 = splittedInput.map(element => element[0]);
+let arr2 = arr1.join("");
+console.log(arr2);
