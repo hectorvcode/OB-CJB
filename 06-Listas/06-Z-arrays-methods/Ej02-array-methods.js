@@ -125,3 +125,64 @@ input6
 .map(word => word.length >= 4 ? createNumeronym(word): word)
 .join(" ");
 console.log(ans);
+
+
+/**
+n! with Map and Reduce
+If the given input is a number, you should return the factorial of that number. The factorial of a natural number n is the product of the positive integers less than or equal to n. So, 2! = 2, 3! = 6, 4! = 24 and so on.
+
+Helpful links
+Array.prototype.map()
+Array.prototype.fill()
+Array.prototype.reduce()
+
+ans: 720
+ */
+const input7 = 6;
+
+let answ7 = 
+new Array(input7)
+.fill(null)
+.map((currentValue, index) => index + 1)
+.reduce((accumulator, currentValue) => accumulator * currentValue);
+
+console.log(answ7);
+
+
+/**
+Count elements in array of arrays
+Count the occurrences of distinct elements in the given 2D array. The given input is an array, the elements of which are arrays of strings. The result is an object whose property names are the values from the arrays and their value is the number of their occurrences.
+
+Helpful links
+Array.prototype.reduce()
+Array.prototype.flat()
+
+ans: {
+    a: 1,
+    b: 1,
+    c: 2,
+    d: 2,
+    f: 2,
+    g: 1,
+}
+ */
+
+const input8 = [
+    ['a', 'b', 'c'],
+    ['c', 'd', 'f'],
+    ['d', 'f', 'g'],
+];
+
+let ans8 = 
+input8.flat()
+.reduce((accumulator8, currentValue8) => {
+    if(accumulator8[currentValue8]){
+        accumulator8[currentValue8] += 1;
+    } else {
+        accumulator8[currentValue8] = 1;
+    }
+    return accumulator8
+}, {});
+
+
+console.log(ans8);
