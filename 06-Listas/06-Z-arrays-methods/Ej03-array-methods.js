@@ -49,3 +49,15 @@ console.log("Filter odd numbers");
 const numbers1 = [1, 2, 3, 4];
 const oddFiltered = numbers1.filter(numb => numb !== 0);
 console.log(oddFiltered);
+
+// Get all the students whose grades are greater than or equal to 90
+console.log("Filter grades");
+const students = [
+    { name: 'Quincy', grade: 96 },
+    { name: 'Jason', grade: 84 },
+    { name: 'Alexis', grade: 100 },
+    { name: 'Sam', grade: 65 },
+    { name: 'Katie', grade: 90 }
+];
+const gradesFiltered = students.filter(person => person.grade >= 90);
+console.log(gradesFiltered);
