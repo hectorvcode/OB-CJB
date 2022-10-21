@@ -26,32 +26,21 @@ console.log(capitalizeNames(["john", "JACOB", "jinGleHeimer", "schmidt"])); // [
 
 
 
-//4) Make an array of strings of the names
-function namesOnly(arr) {
-  // your code here
+// Write a function capitalize that takes a string and uses .map to return the same string in all caps. 
+// ex. capitalize('whoop') // => 'WHOOP'
+// ex. capitalize('oh hey gurl') // => "OH HEY GURL"
+console.log("Capitalize function");
+let capitalize = function(string){
+    let answ = string.toUpperCase();
+    console.log(answ);
 }
-console.log(
-namesOnly([
-    {
-        name: "Angelina Jolie",
-        age: 80,
-    },
-    {
-        name: "Eric Jones",
-        age: 2,
-    },
-    {
-        name: "Paris Hilton",
-        age: 5,
-    },
-    {
-        name: "Kayne West",
-        age: 16,
-    },
-    {
-        name: "Bob Ziroll",
-        age: 100,
-    },
-])
-);
-// ["Angelina Jolie", "Eric Jones", "Paris Hilton", "Kayne West", "Bob Ziroll"]
+capitalize('whoop');
+capitalize('oh hey gurl');
+
+
+// Each number in an array is doubled.
+console.log("Each number doubled");
+const numbers = [1, 2, 3, 4];
+const doubles =  numbers.map(numb => numb * 2);
+console.log(doubles);
+
