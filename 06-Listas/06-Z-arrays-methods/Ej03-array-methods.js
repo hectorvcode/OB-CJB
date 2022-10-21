@@ -44,3 +44,8 @@ const numbers = [1, 2, 3, 4];
 const doubles =  numbers.map(numb => numb * 2);
 console.log(doubles);
 
+// Odd numbers are "filtered" out, leaving only even numbers.
+console.log("Filter odd numbers");
+const numbers1 = [1, 2, 3, 4];
+const oddFiltered = numbers1.filter(numb => numb !== 0);
+console.log(oddFiltered);
