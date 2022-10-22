@@ -127,3 +127,12 @@ const allPositiveNumbers = [1, 2, 3].every(function(item){
     return item > 0;
 });
 console.log(allPositiveNumbers);
+
+//find
+console.log("Find method");
+const objects = [{id: 'a'}, {id: 'b'}, {id: 'c'}];
+const found = objects.find(function(item){
+    return item.id === 'b';
+});
+console.log(found);
+
