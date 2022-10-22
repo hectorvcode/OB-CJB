@@ -61,3 +61,12 @@ const students = [
 ];
 const gradesFiltered = students.filter(person => person.grade >= 90);
 console.log(gradesFiltered);
+
+// adds every number together in an array of numbers
+console.log("Adds every number together in an array of numbers");
+const numbers3 = [1, 2, 3, 4];
+const sum = numbers.reduce(function(result, item){
+    return result + item;
+}, 0);
+console.log(sum);
+
