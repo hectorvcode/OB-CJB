@@ -83,3 +83,9 @@ let petCounts = pets.reduce(function(obj, pet){
     return obj;
 }, {});
 console.log(petCounts);
+
+//forEach()
+console.log("forEach method");
+[1,2,3].forEach(function(item, index){
+    console.log(item,index);
+});
