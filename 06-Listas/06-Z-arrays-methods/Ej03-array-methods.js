@@ -136,3 +136,10 @@ const found = objects.find(function(item){
 });
 console.log(found);
 
+//find index
+console.log("Find Index method");
+const objects2 = [{id: 'a'}, {id: 'b'}, {id: 'c'}];
+const foundIndex = objects2.findIndex(function(item){
+    return item.id === 'b';
+});
+console.log(foundIndex);
