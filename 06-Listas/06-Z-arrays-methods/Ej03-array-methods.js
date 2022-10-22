@@ -97,3 +97,11 @@ const doubled = three.map(function(item){
     return item * 2;
 });
 console.log(doubled);
+
+//filter()
+console.log("Filter method");
+const ints = [1, 2, 3];
+const evens = ints.filter(function(item){
+    return item % 2 === 0;
+});
+console.log(evens);
