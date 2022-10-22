@@ -105,3 +105,25 @@ const evens = ints.filter(function(item){
     return item % 2 === 0;
 });
 console.log(evens);
+
+//reduce()
+// The last number 0 is the initial result value 
+console.log("Reduce method");
+const suma = [1, 2, 3].reduce(function(result, item){
+    return result + item;
+}, 0);
+console.log(suma);
+
+//sum()
+console.log("Some method");
+const hasNegativeNumber = [1, 2, 3, -1, 4].some(function(item){
+    return item < 0;
+});
+console.log(hasNegativeNumber);
+
+//every()
+console.log("Every method");
+const allPositiveNumbers = [1, 2, 3].every(function(item){
+    return item > 0;
+});
+console.log(allPositiveNumbers);
